@@ -2,8 +2,8 @@ require 'ruby2d'
 
 set background: 'navy'
 set fps_cap: 20
-#Width = 640 / 20 = 32
-#Height = 400 / 20 = 24
+# Width = 640 / 20 = 32
+# Height = 400 / 20 = 24
 
 GRID_SIZE = 20
 GRID_WIDTH = Window.width / GRID_SIZE
@@ -42,10 +42,10 @@ class Snake
 
   def can_change_direction_to?(new_direction)
     case @direction
-      when 'up' then new_direction != 'down'
-      when 'down' then new_direction != 'up'
-      when 'left' then new_direction != 'right'
-      when 'right' then new_direction != 'left'
+    when 'up' then new_direction != 'down'
+    when 'down' then new_direction != 'up'
+    when 'left' then new_direction != 'right'
+    when 'right' then new_direction != 'left'
     end
   end
 
@@ -110,6 +110,7 @@ class Game
   end
 
   private
+
   def text_message
     if finished?
       "Game over! Your score was #{@score}. Press 'R' to restart."
