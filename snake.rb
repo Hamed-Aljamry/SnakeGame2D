@@ -87,7 +87,7 @@ class Game
     unless finished?
       Square.new(x: @ball_x * GRID_SIZE, y: @ball_y * GRID_SIZE, size: GRID_SIZE, color: 'yellow')
     end
-    Text.new(text_message, color: "green", x: 10, y: 10, size: 25)
+    Text.new(text_message, color: 'green', x: 10, y: 10, size: 25)
   end
 
   def snake_hit_ball?(x, y)
@@ -118,6 +118,14 @@ class Game
       "Score: #{@score}"
     end
   end
+
+                    # def new_text_message
+                    #   if @score >= 10
+                    #     puts 'Not bad fella!, lets see if you can beat that ;)'
+                    #   else
+                    #     puts 'Thats it?! do better >:('
+                    #   end
+                    # end
 end
 snake = Snake.new
 game = Game.new
