@@ -129,15 +129,12 @@ update do
   snake.draw
   game.draw
 
-
   if game.snake_hit_ball?(snake.x, snake.y)
     game.record_hit
     snake.grow
   end
 
-  if snake.hit_itself?
-    game.finish
-  end
+  game.finish if snake.hit_itself?
 end
 
 on :key_down do |event|
