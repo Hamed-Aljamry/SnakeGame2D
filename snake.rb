@@ -111,11 +111,11 @@ class Game
 
   private
   def text_message
-      if finished?
-        "Game over! Your score was #{@score}. Press 'R' to restart."
-      else
-        "Score: #{@score}"
-      end
+    if finished?
+      "Game over! Your score was #{@score}. Press 'R' to restart."
+    else
+      "Score: #{@score}"
+    end
   end
 end
 snake = Snake.new
