@@ -12,7 +12,7 @@ GRID_HEIGHT = Window.height / GRID_SIZE
 class Snake
   attr_writer :direction
   def initialize
-    @positions = [[2,0], [2,1], [2,2], [2,3]]
+    @positions = [[2, 0], [2, 1], [2, 2], [2, 3]]
     @direction = 'down'
     @growing = false
   end
