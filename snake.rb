@@ -16,7 +16,7 @@ class Snake
     @direction = 'down'
     @growing = false
   end
-
+#heayyasdjbak
   def draw
     @positions.each do |position|
       Square.new(x: position[0] * GRID_SIZE, y: position[1] * GRID_SIZE, size: GRID_SIZE - 1, color: 'white')
